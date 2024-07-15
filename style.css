@@ -1,0 +1,205 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+}
+body{
+        background: #94baff;
+        
+}
+
+h1{
+padding: 10px 0px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #4886bd;
+       color: #f1d9d9;
+}
+.container{
+        display: flex;
+        gap: 3.3rem;
+        padding: 30px;
+}
+.weather-input{
+        width: 550px;
+}
+.weather-input input{
+        background: #94baff;
+        width: 100%;
+        height: 46px;
+        outline: none;
+        margin: 10px 0px;
+        padding: 0px 18px;
+        font-size: 1.21rem;
+        border: 2px solid #dfdede;
+        color: #f1d9d9;
+        border-radius: 1rem;
+        font-weight: bold;
+}
+.search-btn{
+        cursor: pointer;
+        width: 100%;
+        outline: none;
+        margin: 13px 0px;
+        padding: 7px 2px;
+        font-size: 1.1rem;
+        border: 2px solid #dfdede;
+        color: #f1d9d9;
+        background-color: #4886bd;
+        border-radius: 1rem;
+        font-weight: bold;
+}
+.separator{
+        height: 1px;
+        width: 100%;
+        margin: 25px 0px;
+        background: #705454;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+}
+.separator::before{
+        content: "or";
+        
+        color: #f1d9d9;
+        font-size: 1.15rem;
+        padding: 0px 16px;
+        background: #94baff;
+}
+.location-btn{
+        cursor: pointer;
+        width: 100%;
+        outline: none;
+        margin: 13px 0px;
+        padding: 7px 2px;
+        font-size: 1.1rem;
+        border: 2px solid #dfdede;
+        color: #f1d9d9;
+        border-radius: 1rem;
+        font-weight: bold;
+        background: #565656;
+}
+.weather-data{
+        width: 100%;
+}
+.current-weather{
+        display: flex;
+        background: #4886bd;
+        padding: 20px;
+        color: #fbe9e9;
+        justify-content: center;
+}
+
+h2{
+        font-size: 2.0rem;
+        
+}
+
+h4{
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 12px 3px;
+}
+
+.current-weather .icon{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.current-weather .icon img{
+        max-width: 150px;
+        margin-top: -30px;
+}
+
+.current-weather .icon h4{
+        margin-top: -20px;
+        text-transform: capitalize;
+}
+
+.day-forecast h2{
+        margin: 5px 0px;
+}
+.weather-cards{
+        display: flex;
+        gap: 20px;
+}
+.cards{
+        border-radius: 20px;
+        list-style: none;
+        color: #f1dcdc;
+        background: #565656;
+        padding: 18px 16px;
+        width: calc(100% / 5);
+}
+.cards img{
+        max-width: 70px;
+        margin: 5px 0px -12px 0px;
+}
+
+@media (max-width: 1400px) {
+        .current-weather{
+                padding: 20px;
+        }
+        .weather-cards{
+                flex-wrap: wrap;
+        }
+        .cards{
+                width: calc(100% / 4 - 15px);
+        }
+}
+@media (max-width: 1200px) {
+        .cards{
+                width: calc(100% / 3 - 12px);
+        }
+}
+
+@media (max-width: 950px) {
+        .weather-input{
+                width: 450px;
+
+        }
+        .cards{
+                width: calc(100% / 2 - 10px);
+        }
+}
+
+@media (max-width: 750px) {
+        .container{
+                flex-wrap: wrap;
+                padding: 15px;
+        }
+        .weather-input{
+                width: 100%;
+        }
+        
+}
+@media (max-width: 380px) {
+        h1{
+                font-size: 1.45rem;
+        }
+        h2{
+                font-size: 1.3rem;
+        }
+        h4{
+                font-size: 1.0rem;
+        }
+        h3{
+                font-size: 1.1rem;
+        }
+        .weather-input input{
+                font-size: 1.0rem;
+        }
+        .search-btn{
+                font-size: 1.0rem;
+
+        }
+        .location-btn{
+                font-size: 1.0rem;
+        }
+}
+
